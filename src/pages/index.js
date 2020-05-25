@@ -6,13 +6,15 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
-import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 
-import ipad from '../assets/images/ipad.png';
-import demoImage1 from '../assets/images/demo-image-01.jpg';
-import demoImage2 from '../assets/images/demo-image-02.jpg';
-import bgMaster from '../assets/images/bg-masthead.jpg';
+import charity from "../assets/images/charity.jpg";
+import circus from "../assets/images/circus.jpg";
+import happee from "../assets/images/happee.jpg";
+import knet from "../assets/images/knet.jpg";
+import trivia from "../assets/images/trivia.jpg"
+
+import "../assets/sass/toolsused.scss";
 
 const IndexPage = () => (
   <Layout>
@@ -38,18 +40,59 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">Built with Bootstrap 4</h2>
+            <h2 className="text-white mb-4">These are pieces of my toolbox</h2>
             <p className="text-white-50">
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It
-              can be yours right now, simply download the starter on
-              <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
-                the github repo
-              </a>
-              .
+              <ul className="toolbox">
+                <li>
+                  Javascript
+                </li>
+                <li>
+                  ES2015
+                </li>
+                <li>
+                  HTML5
+                </li>
+                <li>
+                  CSS/SCSS
+                </li>
+                <li>
+                  React
+                </li>
+                <li>
+                  Git
+                </li>
+                <li>
+                  Github
+                </li>
+                <li>
+                  Node.js
+                </li>
+                <li>
+                  Express
+                </li>
+                <li>
+                  MongoDB
+                </li>
+                <li>
+                  Mongoose
+                </li>
+                <li>
+                  npm
+                </li>
+                <li>
+                  Wordpress
+                </li>
+                <li>
+                  Jira
+                </li>
+                <li>
+                  Confluence
+                </li>
+              </ul>
             </p>
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
+        {/*         <img src={ipad} className="img-fluid" alt="" /> */}
       </div>
     </section>
 
@@ -57,64 +100,170 @@ const IndexPage = () => (
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-8 col-lg-7">
-            <img className="img-fluid mb-3 mb-lg-0" src={bgMaster} alt="" />
+            <img className="img-fluid mb-3 mb-lg-0" src={charity} alt="" />
           </div>
           <div className="col-xl-4 col-lg-5">
             <div className="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
+              <h4>Charity</h4>
               <p className="text-black-50 mb-0">
-                Grayscale is open source and MIT licensed. This means you can
-                use it for any project - even commercial projects! Download it,
-                customize it, and publish your website!
+                A web application making with MERN stack. I'm working on it with 2 more developer.
               </p>
+              <ul className="toolsused">
+                <li>
+                  React
+                </li>
+                <li>
+                  Express
+                </li>
+                <li>
+                  MongoDB
+                </li>
+                <li>
+                  Node.js
+                </li>
+              </ul>
+              <p className="progress-x">The website is in progress..</p>
+            </div>
+          </div>
+        </div>
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div className="col-xl-8 col-lg-7">
+            <img className="img-fluid mb-3 mb-lg-0" src={circus} alt="" />
+          </div>
+          <div className="col-xl-4 col-lg-5">
+            <div className="featured-text text-center text-lg-left">
+              <h4>Wild Circus</h4>
+              <p className="text-black-50 mb-0">
+                I had 24 hour to make a web application with MERN stack and to deploy it.
+              </p>
+              <ul className="toolsused">
+                <li>
+                  React
+                </li>
+                <li>
+                  Express
+                </li>
+                <li>
+                  MongoDB
+                </li>
+                <li>
+                  Node.js
+                </li>
+              </ul>
+              <a href="https://wildcodecircus.herokuapp.com/" target="_blink" className="btn btn-primary">
+                See the website
+            </a>
             </div>
           </div>
         </div>
 
-        <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage1} alt="" />
+
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div className="col-xl-8 col-lg-7">
+            <img className="img-fluid mb-3 mb-lg-0" src={happee} alt="" />
           </div>
-          <div className="col-lg-6">
-            <div className="bg-black text-center h-100 project">
-              <div className="d-flex h-100">
-                <div className="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 className="text-white">Misty</h4>
-                  <p className="mb-0 text-white-50">
-                    An example of where you can put an image of a project, or
-                    anything else, along with a description.
-                  </p>
-                  <hr className="d-none d-lg-block mb-0 ml-0" />
-                </div>
-              </div>
+          <div className="col-xl-4 col-lg-5">
+            <div className="featured-text text-center text-lg-left">
+              <h4>Happee</h4>
+              <p className="text-black-50 mb-0">
+                54 hour long hackaton project. I work on it with 4 more developer.
+              </p>
+              <ul className="toolsused">
+                <li>
+                  React
+                </li>
+                <li>
+                  Express
+                </li>
+                <li>
+                  MongoDB
+                </li>
+                <li>
+                  Node.js
+                </li>
+                <li>
+                  Leaflet
+                </li>
+              </ul>
+              <a href="https://happee123.herokuapp.com/" target="_blink" className="btn btn-primary">
+                See the website
+            </a>
             </div>
           </div>
         </div>
 
-        <div className="row justify-content-center no-gutters">
-          <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage2} alt="" />
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div className="col-xl-8 col-lg-7">
+            <img className="img-fluid mb-3 mb-lg-0" src={knet} alt="" />
           </div>
-          <div className="col-lg-6 order-lg-first">
-            <div className="bg-black text-center h-100 project">
-              <div className="d-flex h-100">
-                <div className="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 className="text-white">Mountains</h4>
-                  <p className="mb-0 text-white-50">
-                    Another example of a project with its respective
-                    description. These sections work well responsively as well,
-                    try this theme on a small screen!
-                  </p>
-                  <hr className="d-none d-lg-block mb-0 mr-0" />
-                </div>
-              </div>
+          <div className="col-xl-4 col-lg-5">
+            <div className="featured-text text-center text-lg-left">
+              <h4>K-net</h4>
+              <p className="text-black-50 mb-0">
+                2 month long client project. This app is connecting accountants to client's who's searching accountants.
+              </p>
+              <ul className="toolsused">
+                <li>
+                  React
+                </li>
+                <li>
+                  Express
+                </li>
+                <li>
+                  MongoDB
+                </li>
+                <li>
+                  Node.js
+                </li>
+                <li>
+                  Jira
+                </li>
+                <li>
+                  Confluence
+                </li>
+              </ul>
+              <a href="http://161.35.204.71:5000/" target="_blink" className="btn btn-primary">
+                See the website
+            </a>
             </div>
           </div>
         </div>
+
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div className="col-xl-8 col-lg-7">
+            <img className="img-fluid mb-3 mb-lg-0" src={trivia} alt="" />
+          </div>
+          <div className="col-xl-4 col-lg-5">
+            <div className="featured-text text-center text-lg-left">
+              <h4>Trivia nigth game</h4>
+              <p className="text-black-50 mb-0">
+                1 week long project. I made this with 4 more developer.
+              </p>
+              <ul className="toolsused">
+                <li>
+                  HTML
+                </li>
+                <li>
+                  CSS
+                </li>
+                <li>
+                  Javascript
+                </li>
+
+              </ul>
+              <a href="https://trivia-night-hun.netlify.app/" target="_blink" className="btn btn-primary">
+                See the website
+            </a>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
     </section>
 
-    <Subscribe />
+    {/* <Subscribe /> */}
 
     <SocialLinks />
     <Footer />

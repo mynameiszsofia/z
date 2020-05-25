@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+import Avatar from "../components/Avatar"
+import "../assets/sass/avatar.scss";
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -41,26 +43,28 @@ export default class Header extends Component {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
+            <Avatar
+              className="c-avatar--as-logo"
+            />
           </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
               openMenu ? '' : 'collapsed'
-            }`}
+              }`}
             type="button"
             aria-controls="navbarResponsive"
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            Menu
+            {/*  Menu */}
             <i className="fas fa-bars"></i>
           </button>
           <div
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto" style={{ textAlign: "center" }}>
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
