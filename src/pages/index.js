@@ -16,6 +16,18 @@ import trivia from "../assets/images/trivia.jpg"
 
 import "../assets/sass/toolsused.scss";
 
+import styled, { keyframes } from 'styled-components';
+import { tada, pulse } from 'react-animations';
+
+const tadaAnimation = keyframes`${tada}`;
+const pulseAnimation = keyframes`${pulse}`;
+const TadaDiv = styled.div`
+  animation: 1s ${tadaAnimation};
+`;
+const PulseDiv = styled.div`
+  animation: 3s ${pulseAnimation} infinite;
+`;
+
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -28,9 +40,11 @@ const IndexPage = () => (
             {config.subHeading}
           </h2>
           <Scroll type="id" element="about">
-            <a href="#about" className="btn btn-primary">
-              About
+            <TadaDiv>
+              <a href="#about" className="btn btn-primary">
+                About
             </a>
+            </TadaDiv>
           </Scroll>
         </div>
       </div>
@@ -97,6 +111,7 @@ const IndexPage = () => (
     </section>
 
     <section id="projects" className="projects-section bg-light">
+      <h2 style={{ textAlign: "center", marginBottom: "1em" }}>Projects</h2>
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-8 col-lg-7">
@@ -126,6 +141,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
+
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-8 col-lg-7">
             <img className="img-fluid mb-3 mb-lg-0" src={circus} alt="" />
@@ -150,9 +166,11 @@ const IndexPage = () => (
                   Node.js
                 </li>
               </ul>
-              <a href="https://wildcodecircus.herokuapp.com/" target="_blink" className="btn btn-primary">
-                See the website
+              <PulseDiv>
+                <a href="https://wildcodecircus.herokuapp.com/" target="_blink" className="btn btn-primary">
+                  See the website
             </a>
+              </PulseDiv>
             </div>
           </div>
         </div>
@@ -185,9 +203,11 @@ const IndexPage = () => (
                   Leaflet
                 </li>
               </ul>
-              <a href="https://happee123.herokuapp.com/" target="_blink" className="btn btn-primary">
-                See the website
+              <PulseDiv>
+                <a href="https://happee123.herokuapp.com/" target="_blink" className="btn btn-primary">
+                  See the website
             </a>
+              </PulseDiv>
             </div>
           </div>
         </div>
@@ -200,7 +220,7 @@ const IndexPage = () => (
             <div className="featured-text text-center text-lg-left">
               <h4>K-net</h4>
               <p className="text-black-50 mb-0">
-                2 month long client project. This app is connecting accountants to client's who's searching accountants.
+                2 month long client project. This app is connect accountants to client's who's searching accountants.
               </p>
               <ul className="toolsused">
                 <li>
@@ -222,9 +242,11 @@ const IndexPage = () => (
                   Confluence
                 </li>
               </ul>
-              <a href="http://161.35.204.71:5000/" target="_blink" className="btn btn-primary">
-                See the website
+              <PulseDiv>
+                <a href="http://161.35.204.71:5000/" target="_blink" className="btn btn-primary">
+                  See the website
             </a>
+              </PulseDiv>
             </div>
           </div>
         </div>
@@ -251,9 +273,11 @@ const IndexPage = () => (
                 </li>
 
               </ul>
-              <a href="https://trivia-night-hun.netlify.app/" target="_blink" className="btn btn-primary">
-                See the website
+              <PulseDiv>
+                <a href="https://trivia-night-hun.netlify.app/" target="_blink" className="btn btn-primary">
+                  See the website
             </a>
+              </PulseDiv>
             </div>
           </div>
         </div>

@@ -10,7 +10,8 @@
 
 .btn-primary {
   background-color: $primary;
-  &:hover {
+  &:hover{
+    
     background-color: darken($primary, 10%);
   }
   &:focus {

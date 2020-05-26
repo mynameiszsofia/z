@@ -32,8 +32,10 @@
 @media (max-width: 992px){
     .toolsused{
         justify-content: center;
+        flex-wrap: wrap;
         li{
             color: #f8f9fa;
+            margin-bottom: 0.3em;
         }
         
     }
