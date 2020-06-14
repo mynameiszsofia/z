@@ -20,13 +20,10 @@ import styled, { keyframes } from 'styled-components';
 import { tada, pulse } from 'react-animations';
 
 const tadaAnimation = keyframes`${tada}`;
-const pulseAnimation = keyframes`${pulse}`;
 const TadaDiv = styled.div`
   animation: 1s ${tadaAnimation};
 `;
-const PulseDiv = styled.div`
-  animation: 3s ${pulseAnimation} infinite;
-`;
+
 
 const IndexPage = () => (
   <Layout>
@@ -55,7 +52,7 @@ const IndexPage = () => (
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <h2 className="text-white mb-4">These are pieces of my toolbox</h2>
-            <p className="text-white-50">
+            <div className="text-white-50">
               <ul className="toolbox">
                 <li>
                   Javascript
@@ -103,7 +100,7 @@ const IndexPage = () => (
                   Confluence
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
         {/*         <img src={ipad} className="img-fluid" alt="" /> */}
@@ -166,11 +163,9 @@ const IndexPage = () => (
                   Node.js
                 </li>
               </ul>
-              <PulseDiv>
-                <a href="https://wildcodecircus.herokuapp.com/" target="_blink" className="btn btn-primary">
-                  See the website
+              <a href="https://wildcodecircus.herokuapp.com/" target="_blink" className="btn btn-primary">
+                See the website
             </a>
-              </PulseDiv>
             </div>
           </div>
         </div>
@@ -203,11 +198,9 @@ const IndexPage = () => (
                   Leaflet
                 </li>
               </ul>
-              <PulseDiv>
-                <a href="https://happee123.herokuapp.com/" target="_blink" className="btn btn-primary">
-                  See the website
+              <a href="https://happee123.herokuapp.com/" target="_blink" className="btn btn-primary">
+                See the website
             </a>
-              </PulseDiv>
             </div>
           </div>
         </div>
@@ -242,11 +235,9 @@ const IndexPage = () => (
                   Confluence
                 </li>
               </ul>
-              <PulseDiv>
-                <a href="http://161.35.204.71:5000/" target="_blink" className="btn btn-primary">
-                  See the website
+              <a href="http://161.35.204.71:5000/" target="_blink" className="btn btn-primary">
+                See the website
             </a>
-              </PulseDiv>
             </div>
           </div>
         </div>
@@ -273,11 +264,9 @@ const IndexPage = () => (
                 </li>
 
               </ul>
-              <PulseDiv>
-                <a href="https://trivia-night-hun.netlify.app/" target="_blink" className="btn btn-primary">
-                  See the website
+              <a href="https://trivia-night-hun.netlify.app/" target="_blink" className="btn btn-primary">
+                See the website
             </a>
-              </PulseDiv>
             </div>
           </div>
         </div>

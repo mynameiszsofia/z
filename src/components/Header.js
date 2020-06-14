@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
-import config from '../../config';
 import Avatar from "../components/Avatar"
 import "../assets/sass/avatar.scss";
 export default class Header extends Component {

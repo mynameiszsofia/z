@@ -23,16 +23,11 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://linkedin.com/in/zsofialakatos',
     },
-    /*  {
-       icon: 'fa-twitter',
-       name: 'Twitter',
-       url: 'https://twitter.com/onlyanubhav',
-     }, */
-    /*  {
-       icon: 'fa-facebook-f',
-       name: 'Facebook',
-       url: 'https://facebook.com/theanubhav',
-     }, */
+    {
+      icon: 'fa-behance',
+      name: 'Behance',
+      url: 'https://www.behance.net/lakatoszsofia',
+    },
   ],
   email: 'lakatos.zsofia1993@gmail.com',
   phone: '30-419-1735',
